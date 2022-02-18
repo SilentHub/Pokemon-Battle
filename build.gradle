@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+	id 'pmd'
 }
 
 repositories {
@@ -7,5 +8,10 @@ repositories {
 }
 
 dependencies {
-	implementation 'net.sourceforge.pmd:pmd-java:6.39.0'
+	//implementation 'net.sourceforge.pmd:pmd-java:6.39.0'
+}
+pmd {
+    toolVersion = '6.39.0'
+    ruleSetFiles = files("pmd.xml")
+    ruleSets = []
 }
