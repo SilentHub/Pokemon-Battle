@@ -9,7 +9,7 @@ repositories {
 
 dependencies {
 	implementation 'net.sourceforge.pmd:pmd-java:6.39.0'
-	implementation files(fileTree(dir: 'src/main/java', includes: ['Player.java']))
+	implementation files(fileTree(dir: '.*/src/main/java', includes: ['*.java']))
 }
 pmd {
     toolVersion = '6.39.0'
