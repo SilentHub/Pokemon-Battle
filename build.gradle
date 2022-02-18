@@ -3,8 +3,9 @@ plugins {
 }
 
 repositories {
-    jcenter()
+   mavenCentral()
 }
 
 dependencies {
+	implementation 'net.sourceforge.pmd:pmd-java:6.39.0'
 }
